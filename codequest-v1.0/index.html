@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CodeQuest</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="wrap">
+  <header class="top" id="top"></header>
+  <main id="app"></main>
+  <div id="modal" hidden></div>
+  <footer class="credit">Made with care by <b>Vasireddy Saran Manikanta</b> &middot; CodeQuest v1.0</footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="bd-btn" id="bd-btn" aria-label="Open Quest Buddy helper">Ask Buddy</button>
+<section class="bd-panel" id="bd-panel" hidden aria-label="Quest Buddy">
+  <div class="bd-head"><b>Quest Buddy</b><button id="bd-close" class="bd-x" aria-label="Close">&times;</button></div>
+  <div class="bd-log" id="bd-log" aria-live="polite"></div>
+  <div class="bd-form"><input id="bd-in" type="text" placeholder="Ask a doubt..." aria-label="Ask Quest Buddy"><button class="btn" id="bd-send">Send</button></div>
+</section>
+<script src="data_core.js"></script>
+<script src="data_py.js"></script>
+<script src="data_html.js"></script>
+<script src="data_css.js"></script>
+<script src="data_sql.js"></script>
+<script src="data_js.js"></script>
+<script src="data_ml.js"></script>
+<script src="engine.js"></script>
+<script src="engine2.js"></script>
+<script src="py_parse.js"></script>
+<script src="py_run.js"></script>
+<script src="py_ml.js"></script>
+<script src="py_check.js"></script>
+<script src="memes.js"></script>
+<script src="auth.js"></script>
+<script src="app.js"></script>
+<script src="play.js"></script>
+<script src="buddy.js"></script>
+<script>route();document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});</script>
+</body></html>
